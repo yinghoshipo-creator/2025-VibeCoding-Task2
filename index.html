@@ -1,4 +1,4 @@
-<!DOCTYPE html> <html lang="zh-Hant"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Safirica Odyssey · Frontend Dev — 個人品牌網站</title> <meta name="description" content="個人品牌網站範本：介紹前端工程師背景、技能、作品集與聯絡方式。此檔為 Phase 1 骨架，包含可替換的 Section 插槽與 CSS 插槽，方便後續以 Section SDD 替換內容。" /> <style> /* CSS:BASE-START */ /* 全站基底樣式（請勿使用 ID 選擇器）*/ :root { --bg: #0b1220; /* 深藍/深灰 */ --surface: #0f1724; --muted: #9aa4b2; --text: #eef2f7; --accent: #1e90ff; /* 主色：偏青的深藍 */ --max-width: 1100px; }
+<!DOCTYPE html> <html lang="zh-Hant"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Safirica Odyssey · Discover Kenya’s Hidden Gems - 個人品牌網站</title> <meta name="description" content="個人品牌網站範本：介紹前端工程師背景、技能、作品集與聯絡方式。此檔為 Phase 1 骨架，包含可替換的 Section 插槽與 CSS 插槽，方便後續以 Section SDD 替換內容。" /> <style> /* CSS:BASE-START */ /* 全站基底樣式（請勿使用 ID 選擇器）*/ :root { --bg: #0b1220; /* 深藍/深灰 */ --surface: #0f1724; --muted: #9aa4b2; --text: #eef2f7; --accent: #1e90ff; /* 主色：偏青的深藍 */ --max-width: 1100px; }
 *, *::before, *::after { box-sizing: border-box; }
 
 html, body {
@@ -270,7 +270,22 @@ button, a.button {
   .hero-title { font-size: 2.4rem; }
 }
 /* CSS:RWD-END */
-</style> </head> <body> <div class="page"> <header class="site-header"> <div class="container nav" role="navigation" aria-label="主導覽列"> <div class="logo">Safirica Odyssey · Your travel agent</div> <nav class="nav-links" aria-label="主要連結"> <a class="nav-link" href="#hero">首頁</a> <a class="nav-link" href="#about">關於我</a> <a class="nav-link" href="#skills">技能</a> <a class="nav-link" href="#projects">作品集</a> <a class="nav-link" href="#contact">聯絡我</a> </nav> </div> </header>
+</style> </head> <body> <div class="page"> <header class="site-header">
+  <div class="container nav">
+    <div class="logo">Safirica Odyssey · Your travel agent</div>
+    <nav class="nav-links">
+      <a class="nav-link" href="#hero">首頁</a>
+      <a class="nav-link" href="#about">關於我</a>
+      <a class="nav-link" href="#skills">技能</a>
+      <a class="nav-link" href="#projects">作品集</a>
+      <a class="nav-link" href="#contact">聯絡我</a>
+    </nav>
+    <div class="lang-switch">
+      <a href="index.html" lang="zh-Hant">🇹🇼 中文</a>｜
+      <a href="index-en.html" lang="en">🇺🇸 English</a>
+    </div>
+  </div>
+</header>
   <main>
   <!-- SECTION:HERO-START -->
   <section id="hero" class="section section-hero" aria-labelledby="hero-heading">
@@ -294,22 +309,34 @@ button, a.button {
   </section>
   <!-- SECTION:HERO-END -->
 
-  <!-- SECTION:ABOUT-START -->
-  <section id="about" class="section section-about" aria-labelledby="about-heading">
-    <div class="container about-grid">
-      <div class="about-card">
-        <h2 id="about-heading" class="section-title">關於我（之後會用 Section SDD 替換）</h2>
-        <p class="lead">這裡目前是 About 區的占位內容，簡短說明會放在這裡，包括背景、經歷與專長。</p>
-        <p class="muted">之後會用 Section SDD 的 Prompt 產生新的 section，請把新的 section 程式碼整段貼在 &lt;!-- SECTION:ABOUT-START --&gt; 與 &lt;!-- SECTION:ABOUT-END --&gt; 之間，完全取代現在這一區。</p>
-      </div>
-      <div class="about-card" aria-hidden="false">
-        <figure style="margin:0;">
-          <img src="https://plus.unsplash.com/premium_photo-1692049124070-87d5ddfea09a?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Nature of beauty- tea farm" loading="lazy" />
-        </figure>
-      </div>
-    </div>
-  </section>
-  <!-- SECTION:ABOUT-END -->
+   <!-- SECTION:ABOUT-START -->
+      <section id="about" class="section section-about" aria-labelledby="about-heading">
+        <div class="container about-grid">
+          <div class="about-content">
+            <h2 id="about-heading" class="section-title">關於我</h2>
+            <p>我是一位旅遊顧問，專注於帶領旅人探索當地文化與隱藏景點。擅長規劃客製化行程、文化導覽，以及串連在地夥伴網絡。</p>
+            <p>我重視溝通與細節，喜歡深入了解每位旅客的需求；同時，我熱愛旅遊與故事分享，期望讓每趟旅程都充滿意義與驚喜。</p>
+
+            <ul class="about-list">
+              <li>擅長設計在地深度行程與文化體驗</li>
+              <li>熟悉肯亞自然景觀與社區導覽規劃</li>
+              <li>能以中英雙語溝通，協助國際旅客交流</li>
+            </ul>
+
+            <div class="about-actions">
+              <a class="button" href="#projects">查看作品集</a>
+              <a class="button" href="#contact">聯絡我</a>
+            </div>
+          </div>
+
+          <div>
+            <figure style="margin:0;">
+              <img src="https://plus.unsplash.com/premium_photo-1692049124070-87d5ddfea09a?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="肯亞野外大自然" loading="lazy" />
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- SECTION:ABOUT-END -->
 
   <!-- SECTION:SKILLS-START -->
   <section id="skills" class="section section-skills" aria-labelledby="skills-heading">
