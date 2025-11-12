@@ -78,7 +78,9 @@ button, a.button {
   justify-content: space-between;
   gap: 12px;
   padding: 12px 0;
+  flex-wrap: wrap;       /* 🔧 修正超出問題 */
 }
+
 
 .logo {
   font-weight: 700;
@@ -256,7 +258,7 @@ button, a.button {
   .hero-title { font-size: 2rem; }
 
   .about-grid {
-    grid-template-columns: 1fr 320px;
+    grid-template-columns: 1fr 360px;
     gap: 24px;
   }
 
@@ -269,6 +271,7 @@ button, a.button {
   .container { padding-left: 24px; padding-right: 24px; }
   .hero-title { font-size: 2.4rem; }
 }
+
 /* CSS:RWD-END */
 </style> </head> <body> <div class="page"> <header class="site-header">
   <div class="container nav">
